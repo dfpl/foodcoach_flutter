@@ -16,6 +16,7 @@ This is the mobile application connected to [FoodCoach server](https://github.co
 2. Navigate to `lib\main.dart` and run
 
 ## Development Environment
+### Dependencies
 1. [Flutter](https://docs.flutter.dev/get-started/install)
 2. [Android Studio](https://developer.android.com/studio/install)
 2. [IDE](https://docs.flutter.dev/get-started/test-drive#choose-your-ide)
