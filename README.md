@@ -4,6 +4,7 @@ This is the mobile application connected to [FoodCoach server](https://github.co
 
 ## How to run
 1. Run [FoodCoach server](https://github.com/dfpl/foodcoach_flutter)
+2. Modify `API_URL` in `assets/.env` and set it to the FoodCoach server URL
 1. Run a device
    1. using android studio
       1. Open Android Studio > Projects > More Actions > Virtual Device Manager > Create Virtual Device
