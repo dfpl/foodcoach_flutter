@@ -2,7 +2,7 @@
 
 This is the mobile application connected to [FoodCoach server](https://github.com/dfpl/foodcoach_flutter). 
 
-## How to run
+## Getting started
 *See [wiki](https://github.com/dfpl/foodcoach_flutter/wiki) for some images*
 1. Run [FoodCoach server](https://github.com/dfpl/foodcoach_flutter)
 2. Modify `API_URL` in `assets/.env` and set it to the FoodCoach server URL
