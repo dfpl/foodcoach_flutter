@@ -2,10 +2,15 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'text_recognition_service.dart'; // TextRecognitionService 클래스를 정의한 파일을 임포트하세요.
 import 'NutritionInfo.dart'; // NutritionInfo 모델을 정의한 파일을 임포트하세요.
 
-void main() => runApp(MyApp());
+void main() async {
+  await dotenv.load(fileName: "assets/.env");
+
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -67,7 +72,7 @@ class _TextRecognitionWidgetState extends State<TextRecognitionWidget> {
               child: ListView(
                 children: [
                   Image.network(
-                    'http://192.168.45.4:8080/${_nutritionInfo?.fileName}', // 여기에 이미지 URL을 입력하세요.
+                    '${dotenv.get("API_URL")}/${_nutritionInfo?.fileName}', // 여기에 이미지 URL을 입력하세요.
                     width: 200, // 이미지의 너비를 지정 (옵션)
                     height: 200, // 이미지의 높이를 지정 (옵션)
                     fit: BoxFit.cover, // 이미지가 지정된 공간에 맞도록 조정 (옵션)
